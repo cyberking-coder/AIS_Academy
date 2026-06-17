@@ -25,7 +25,7 @@ export default function Hero() {
     >
       {/* Ambient light blobs */}
       <motion.div
-        style={{ y, background: "radial-gradient(ellipse, #5C6795 0%, transparent 70%)" }}
+        style={{ y, background: "radial-gradient(ellipse, #6698D2 0%, transparent 70%)" }}
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[600px] rounded-full opacity-20 blur-[120px]"
       />
       <motion.div
@@ -36,7 +36,7 @@ export default function Hero() {
       />
       <motion.div
         className="absolute top-40 left-10 w-[300px] h-[300px] rounded-full opacity-10 blur-[80px]"
-        style={{ background: "radial-gradient(ellipse, #7B85B4 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse, #89B0E0 0%, transparent 70%)" }}
         animate={{ scale: [1, 1.3, 1], opacity: [0.1, 0.18, 0.1] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
       />
@@ -50,7 +50,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass border border-[#5C6795]/30 mb-8"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass border border-[#6698D2]/30 mb-8"
         >
           <div className="w-2 h-2 rounded-full bg-[#F0A500] animate-pulse" />
           <span className="text-sm text-gray-300 font-medium">Rated 4.6★ by 53+ Students in Pune</span>
@@ -77,7 +77,7 @@ export default function Hero() {
           className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           AiS Academy — Avabodham Institute of Science brings{" "}
-          <span className="text-[#7B85B4] font-medium">world-class coaching</span> to
+          <span className="text-[#89B0E0] font-medium">world-class coaching</span> to
           Pune's brightest minds. Expert faculty, personalized attention, exceptional results.
         </motion.p>
 
@@ -90,7 +90,7 @@ export default function Hero() {
         >
           <motion.a
             href="#contact"
-            whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(92,103,149,0.4)" }}
+            whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(102,152,210,0.4)" }}
             whileTap={{ scale: 0.97 }}
             className="group flex items-center gap-3 px-8 py-4 rounded-2xl text-base font-semibold text-white animated-border"
           >
@@ -101,7 +101,7 @@ export default function Hero() {
             href="#courses"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            className="flex items-center gap-3 px-8 py-4 rounded-2xl text-base font-semibold text-gray-300 glass border border-white/10 hover:border-[#5C6795]/50 transition-all"
+            className="flex items-center gap-3 px-8 py-4 rounded-2xl text-base font-semibold text-gray-300 glass border border-white/10 hover:border-[#6698D2]/50 transition-all"
           >
             Explore Courses
           </motion.a>
@@ -114,7 +114,7 @@ export default function Hero() {
           transition={{ delay: 0.9 }}
           className="flex items-center justify-center gap-2 text-sm text-gray-500 mb-20"
         >
-          <MapPin size={14} className="text-[#5C6795]" />
+          <MapPin size={14} className="text-[#6698D2]" />
           <span>Parth Enclave, Canal Rd, Warje Jakat Naka, Karvenagar, Pune 411052</span>
         </motion.div>
 
@@ -131,10 +131,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9 + i * 0.1 }}
-              whileHover={{ scale: 1.04, borderColor: "rgba(92,103,149,0.4)" }}
+              whileHover={{ scale: 1.04, borderColor: "rgba(102,152,210,0.4)" }}
               className="glass rounded-2xl p-5 border border-white/5 card-hover"
             >
-              <stat.icon size={20} className="text-[#5C6795] mb-3 mx-auto" />
+              <stat.icon size={20} className="text-[#6698D2] mb-3 mx-auto" />
               <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
               <div className="text-xs text-gray-500">{stat.label}</div>
             </motion.div>
@@ -152,9 +152,9 @@ export default function Hero() {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="w-5 h-8 rounded-full border-2 border-[#5C6795]/40 flex items-start justify-center pt-1"
+          className="w-5 h-8 rounded-full border-2 border-[#6698D2]/40 flex items-start justify-center pt-1"
         >
-          <div className="w-1 h-2 rounded-full bg-[#5C6795]" />
+          <div className="w-1 h-2 rounded-full bg-[#6698D2]" />
         </motion.div>
       </motion.div>
     </section>

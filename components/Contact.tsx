@@ -11,7 +11,7 @@ const info = [
     value: "089899 03131",
     sub: "Mon – Sat, 9 AM – 9:30 PM",
     href: "tel:08989903131",
-    color: "#5C6795",
+    color: "#6698D2",
   },
   {
     icon: MapPin,
@@ -27,7 +27,7 @@ const info = [
     value: "Open Daily",
     sub: "Closes 9:30 PM",
     href: null,
-    color: "#7B85B4",
+    color: "#89B0E0",
   },
   {
     icon: Mail,
@@ -54,7 +54,7 @@ export default function Contact() {
     <section id="contact" ref={ref} className="py-32 relative overflow-hidden">
       <div
         className="absolute left-0 bottom-0 w-[600px] h-[600px] opacity-10 blur-[100px] pointer-events-none"
-        style={{ background: "radial-gradient(ellipse, #5C6795 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse, #6698D2 0%, transparent 70%)" }}
       />
 
       <div className="max-w-7xl mx-auto px-6">
@@ -64,9 +64,9 @@ export default function Contact() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-[#5C6795]/30 mb-5">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#5C6795] animate-pulse" />
-            <span className="text-xs text-[#7B85B4] font-medium uppercase tracking-widest">Get in Touch</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-[#6698D2]/30 mb-5">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#6698D2] animate-pulse" />
+            <span className="text-xs text-[#89B0E0] font-medium uppercase tracking-widest">Get in Touch</span>
           </div>
           <h2
             className="text-4xl md:text-5xl font-bold text-white mb-5"
@@ -143,14 +143,14 @@ export default function Contact() {
             >
               <div className="absolute inset-0 grid-pattern opacity-50" />
               <div className="relative z-10 text-center">
-                <MapPin size={28} className="text-[#5C6795] mx-auto mb-2" />
+                <MapPin size={28} className="text-[#6698D2] mx-auto mb-2" />
                 <div className="text-sm text-white font-medium">AiS Academy</div>
                 <div className="text-xs text-gray-400 mt-1">Warje Jakat Naka, Pune</div>
                 <a
                   href="https://maps.google.com/?q=AIS+Academy+Parth+Enclave+Warje+Pune"
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-3 inline-flex items-center gap-1.5 text-xs text-[#5C6795] hover:text-[#7B85B4] transition-colors"
+                  className="mt-3 inline-flex items-center gap-1.5 text-xs text-[#6698D2] hover:text-[#89B0E0] transition-colors"
                 >
                   Open in Google Maps →
                 </a>
@@ -168,10 +168,10 @@ export default function Contact() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="h-full glass rounded-3xl p-8 border border-[#5C6795]/30 flex flex-col items-center justify-center text-center"
+                className="h-full glass rounded-3xl p-8 border border-[#6698D2]/30 flex flex-col items-center justify-center text-center"
               >
-                <div className="w-20 h-20 rounded-full bg-[#5C6795]/20 flex items-center justify-center mb-5">
-                  <CheckCircle2 size={40} className="text-[#5C6795]" />
+                <div className="w-20 h-20 rounded-full bg-[#6698D2]/20 flex items-center justify-center mb-5">
+                  <CheckCircle2 size={40} className="text-[#6698D2]" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-3" style={{ fontFamily: "var(--font-playfair)" }}>
                   Message Sent!
@@ -197,7 +197,7 @@ export default function Contact() {
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                       placeholder="Your name"
-                      className="w-full px-4 py-3 rounded-xl bg-white/4 border border-white/8 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-[#5C6795]/60 transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-white/4 border border-white/8 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-[#6698D2]/60 transition-colors"
                     />
                   </div>
                   <div>
@@ -208,7 +208,7 @@ export default function Contact() {
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
                       placeholder="089899 03131"
-                      className="w-full px-4 py-3 rounded-xl bg-white/4 border border-white/8 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-[#5C6795]/60 transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-white/4 border border-white/8 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-[#6698D2]/60 transition-colors"
                     />
                   </div>
                 </div>
@@ -218,7 +218,7 @@ export default function Contact() {
                   <select
                     value={form.subject}
                     onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-[#111223] border border-white/8 text-white text-sm focus:outline-none focus:border-[#5C6795]/60 transition-colors"
+                    className="w-full px-4 py-3 rounded-xl bg-[#111223] border border-white/8 text-white text-sm focus:outline-none focus:border-[#6698D2]/60 transition-colors"
                   >
                     <option value="">Select a course</option>
                     <option>Physics</option>
@@ -237,13 +237,13 @@ export default function Contact() {
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                     placeholder="Tell us about your child's current class and goals..."
-                    className="w-full px-4 py-3 rounded-xl bg-white/4 border border-white/8 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-[#5C6795]/60 transition-colors resize-none"
+                    className="w-full px-4 py-3 rounded-xl bg-white/4 border border-white/8 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-[#6698D2]/60 transition-colors resize-none"
                   />
                 </div>
 
                 <motion.button
                   type="submit"
-                  whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(92,103,149,0.3)" }}
+                  whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(102,152,210,0.3)" }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full py-4 rounded-xl font-semibold text-white animated-border flex items-center justify-center gap-2 group"
                 >
@@ -253,7 +253,7 @@ export default function Contact() {
 
                 <p className="text-xs text-gray-600 text-center">
                   Or call us directly at{" "}
-                  <a href="tel:08989903131" className="text-[#5C6795] hover:underline">089899 03131</a>
+                  <a href="tel:08989903131" className="text-[#6698D2] hover:underline">089899 03131</a>
                 </p>
               </form>
             )}

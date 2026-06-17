@@ -16,11 +16,11 @@ export default function CTA() {
         transition={{ duration: 0.9, ease: [0.23, 1, 0.32, 1] }}
         className="max-w-5xl mx-auto relative"
       >
-        <div className="relative rounded-3xl overflow-hidden glass border border-[#5C6795]/20 p-12 md:p-16 text-center glow-primary">
+        <div className="relative rounded-3xl overflow-hidden glass border border-[#6698D2]/20 p-12 md:p-16 text-center glow-primary">
           {/* BG gradient */}
           <div
             className="absolute inset-0 opacity-30"
-            style={{ background: "radial-gradient(ellipse at 50% 50%, #5C679530, transparent 70%)" }}
+            style={{ background: "radial-gradient(ellipse at 50% 50%, #6698D230, transparent 70%)" }}
           />
           <div className="absolute inset-0 grid-pattern opacity-20" />
 
@@ -53,7 +53,7 @@ export default function CTA() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <motion.a
                 href="#contact"
-                whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(92,103,149,0.5)" }}
+                whileHover={{ scale: 1.05, boxShadow: "0 20px 60px rgba(102,152,210,0.5)" }}
                 whileTap={{ scale: 0.97 }}
                 className="group flex items-center gap-3 px-8 py-4 rounded-2xl text-base font-semibold text-white animated-border"
               >
@@ -63,7 +63,7 @@ export default function CTA() {
               <motion.a
                 href="tel:08989903131"
                 whileHover={{ scale: 1.05 }}
-                className="flex items-center gap-3 px-8 py-4 rounded-2xl text-base font-semibold text-gray-300 glass border border-white/10 hover:border-[#5C6795]/50 transition-all"
+                className="flex items-center gap-3 px-8 py-4 rounded-2xl text-base font-semibold text-gray-300 glass border border-white/10 hover:border-[#6698D2]/50 transition-all"
               >
                 Call: 089899 03131
               </motion.a>

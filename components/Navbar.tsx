@@ -52,7 +52,7 @@ export default function Navbar() {
             </div>
             <div className="hidden sm:block">
               <div className="text-base font-bold text-white leading-tight">AiS Academy</div>
-              <div className="text-[10px] text-[#5C6795] tracking-widest uppercase">Avabodham Institute</div>
+              <div className="text-[10px] text-[#6698D2] tracking-widest uppercase">Avabodham Institute</div>
             </div>
           </motion.a>
 
@@ -66,7 +66,7 @@ export default function Navbar() {
                 onClick={() => setActive(link.label)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
                   active === link.label
-                    ? "text-white bg-[#5C6795]/20"
+                    ? "text-white bg-[#6698D2]/20"
                     : "text-gray-400 hover:text-white hover:bg-white/5"
                 }`}
               >

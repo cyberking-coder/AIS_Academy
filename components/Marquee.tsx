@@ -18,11 +18,11 @@ export default function MarqueeBanner() {
           {[...items, ...items].map((item, i) => (
             <span
               key={i}
-              className="flex items-center gap-3 text-sm font-medium text-gray-500 hover:text-[#7B85B4] transition-colors cursor-default"
+              className="flex items-center gap-3 text-sm font-medium text-gray-500 hover:text-[#89B0E0] transition-colors cursor-default"
             >
               <span
                 className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-                style={{ background: i % 4 === 0 ? "#5C6795" : i % 4 === 1 ? "#F0A500" : i % 4 === 2 ? "#7B85B4" : "#4ECDC4" }}
+                style={{ background: i % 4 === 0 ? "#6698D2" : i % 4 === 1 ? "#F0A500" : i % 4 === 2 ? "#89B0E0" : "#4ECDC4" }}
               />
               {item}
             </span>

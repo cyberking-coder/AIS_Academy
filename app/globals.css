@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #5C6795;
-  --primary-light: #7B85B4;
-  --primary-dark: #3D4670;
+  --primary: #6698D2;
+  --primary-light: #89B0E0;
+  --primary-dark: #2A5BA8;
   --accent: #F0A500;
   --accent-light: #FFD166;
   --bg-dark: #0A0B14;
   --bg-card: #111223;
-  --bg-glass: rgba(92, 103, 149, 0.08);
+  --bg-glass: rgba(102, 152, 210, 0.08);
   --text-primary: #FFFFFF;
   --text-muted: #9CA3AF;
-  --gradient-1: linear-gradient(135deg, #5C6795 0%, #3D4670 100%);
+  --gradient-1: linear-gradient(135deg, #6698D2 0%, #2A5BA8 100%);
   --gradient-2: linear-gradient(135deg, #F0A500 0%, #FF6B6B 100%);
 }
 
@@ -64,14 +64,14 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #fff 0%, #5C6795 50%, #F0A500 100%);
+  background: linear-gradient(135deg, #fff 0%, #6698D2 50%, #F0A500 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-primary {
-  background: linear-gradient(135deg, #7B85B4 0%, #FFFFFF 100%);
+  background: linear-gradient(135deg, #89B0E0 0%, #FFFFFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -79,7 +79,7 @@ body {
 
 /* Glow effects */
 .glow-primary {
-  box-shadow: 0 0 40px rgba(92, 103, 149, 0.3), 0 0 80px rgba(92, 103, 149, 0.1);
+  box-shadow: 0 0 40px rgba(102, 152, 210, 0.3), 0 0 80px rgba(102, 152, 210, 0.1);
 }
 
 .glow-accent {
@@ -89,8 +89,8 @@ body {
 /* Grid pattern */
 .grid-pattern {
   background-image:
-    linear-gradient(rgba(92, 103, 149, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(92, 103, 149, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(102, 152, 210, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(102, 152, 210, 0.06) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 .animated-border {
-  background: linear-gradient(135deg, #5C6795, #F0A500, #5C6795);
+  background: linear-gradient(135deg, #6698D2, #F0A500, #6698D2);
   background-size: 200% 200%;
   animation: borderRotate 4s ease infinite;
 }
@@ -128,7 +128,7 @@ body {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: rgba(92, 103, 149, 0.4);
+  background: rgba(102, 152, 210, 0.4);
   animation: pulseRing 2s ease-out infinite;
 }
 
@@ -158,5 +158,5 @@ body {
 
 .card-hover:hover {
   transform: translateY(-8px);
-  box-shadow: 0 32px 64px rgba(92, 103, 149, 0.2);
+  box-shadow: 0 32px 64px rgba(102, 152, 210, 0.2);
 }

@@ -9,7 +9,7 @@ const features = [
     icon: Brain,
     title: "Concept-First Learning",
     description: "We don&apos;t teach rote memorization. Every topic is explained with deep conceptual clarity and real-world application.",
-    color: "#5C6795",
+    color: "#6698D2",
   },
   {
     icon: Users2,
@@ -21,7 +21,7 @@ const features = [
     icon: Target,
     title: "Goal-Oriented Approach",
     description: "Whether it&apos;s board exams, JEE, NEET, or scholarship tests — we tailor our teaching to your specific goals.",
-    color: "#7B85B4",
+    color: "#89B0E0",
   },
   {
     icon: TrendingUp,
@@ -51,7 +51,7 @@ export default function WhyUs() {
     <section ref={ref} className="py-32 relative overflow-hidden">
       <div
         className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[800px] h-[600px] opacity-8 blur-[120px] pointer-events-none"
-        style={{ background: "radial-gradient(ellipse, #5C6795 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse, #6698D2 0%, transparent 70%)" }}
       />
 
       <div className="max-w-7xl mx-auto px-6">
@@ -60,9 +60,9 @@ export default function WhyUs() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-[#5C6795]/30 mb-5">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#5C6795]" />
-            <span className="text-xs text-[#7B85B4] font-medium uppercase tracking-widest">Why AiS Academy</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-[#6698D2]/30 mb-5">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#6698D2]" />
+            <span className="text-xs text-[#89B0E0] font-medium uppercase tracking-widest">Why AiS Academy</span>
           </div>
           <h2
             className="text-4xl md:text-5xl font-bold text-white mb-5"

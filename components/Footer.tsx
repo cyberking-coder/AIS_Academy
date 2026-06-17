@@ -21,7 +21,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="text-base font-bold text-white">AiS Academy</div>
-                <div className="text-[10px] text-[#5C6795] tracking-widest uppercase">Avabodham Institute of Science</div>
+                <div className="text-[10px] text-[#6698D2] tracking-widest uppercase">Avabodham Institute of Science</div>
               </div>
             </div>
             <p className="text-sm text-gray-500 leading-relaxed max-w-xs mb-4">
@@ -57,11 +57,11 @@ export default function Footer() {
             <div className="text-xs text-gray-500 uppercase tracking-widest mb-4">Contact</div>
             <div className="space-y-4">
               <a href="tel:08989903131" className="flex items-start gap-2.5 group">
-                <Phone size={14} className="text-[#5C6795] mt-0.5 flex-shrink-0" />
+                <Phone size={14} className="text-[#6698D2] mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-gray-400 group-hover:text-white transition-colors">089899 03131</span>
               </a>
               <div className="flex items-start gap-2.5">
-                <MapPin size={14} className="text-[#5C6795] mt-0.5 flex-shrink-0" />
+                <MapPin size={14} className="text-[#6698D2] mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-gray-400">
                   Second floor, Parth Enclave,<br />
                   Canal Rd, behind D Mart,<br />
@@ -69,7 +69,7 @@ export default function Footer() {
                 </span>
               </div>
               <a href="https://aisacademy.in" target="_blank" rel="noreferrer" className="flex items-center gap-2.5 group">
-                <Globe size={14} className="text-[#5C6795]" />
+                <Globe size={14} className="text-[#6698D2]" />
                 <span className="text-sm text-gray-400 group-hover:text-white transition-colors">aisacademy.in</span>
               </a>
             </div>

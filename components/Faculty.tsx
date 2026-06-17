@@ -13,7 +13,7 @@ const faculty = [
     rating: 5.0,
     bio: "Known for breaking down the most complex Physics concepts into intuitive, understandable ideas. Mahesh Sir's interactive teaching style has helped hundreds of students crack IIT-JEE and board exams.",
     subjects: ["Physics", "Mathematics", "JEE Prep"],
-    color: "#5C6795",
+    color: "#6698D2",
     initials: "MS",
   },
   {
@@ -37,7 +37,7 @@ export default function Faculty() {
     <section id="faculty" ref={ref} className="py-32 relative overflow-hidden">
       <div
         className="absolute left-1/2 -translate-x-1/2 top-0 w-[800px] h-[400px] opacity-10 blur-[100px] pointer-events-none"
-        style={{ background: "radial-gradient(ellipse, #5C6795 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse, #6698D2 0%, transparent 70%)" }}
       />
 
       <div className="max-w-7xl mx-auto px-6">
@@ -48,9 +48,9 @@ export default function Faculty() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-[#5C6795]/30 mb-5">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#5C6795]" />
-            <span className="text-xs text-[#7B85B4] font-medium uppercase tracking-widest">Meet the Team</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-[#6698D2]/30 mb-5">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#6698D2]" />
+            <span className="text-xs text-[#89B0E0] font-medium uppercase tracking-widest">Meet the Team</span>
           </div>
           <h2
             className="text-4xl md:text-5xl font-bold text-white mb-5"

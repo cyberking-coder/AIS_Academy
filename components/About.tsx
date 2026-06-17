@@ -22,7 +22,7 @@ export default function About() {
       {/* BG glow */}
       <div
         className="absolute left-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-10 blur-[100px] pointer-events-none"
-        style={{ background: "radial-gradient(ellipse, #5C6795 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse, #6698D2 0%, transparent 70%)" }}
       />
 
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
@@ -61,13 +61,13 @@ export default function About() {
               </div>
 
               {/* Quote */}
-              <div className="bg-[#5C6795]/10 rounded-2xl p-5 border border-[#5C6795]/20">
+              <div className="bg-[#6698D2]/10 rounded-2xl p-5 border border-[#6698D2]/20">
                 <p className="text-sm text-gray-300 leading-relaxed italic">
                   &quot;Studying at AiS has been an enriching experience. The dedicated faculty,
                   conducive learning environment, and comprehensive support system make it an
                   exceptional place to pursue education.&quot;
                 </p>
-                <div className="mt-3 text-xs text-[#5C6795]">— Parth Machewar, Student</div>
+                <div className="mt-3 text-xs text-[#6698D2]">— Parth Machewar, Student</div>
               </div>
             </div>
           </div>
@@ -89,9 +89,9 @@ export default function About() {
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.9, delay: 0.2, ease: [0.23, 1, 0.32, 1] }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-[#5C6795]/30 mb-6">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#5C6795]" />
-            <span className="text-xs text-[#7B85B4] font-medium uppercase tracking-widest">About Us</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-[#6698D2]/30 mb-6">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#6698D2]" />
+            <span className="text-xs text-[#89B0E0] font-medium uppercase tracking-widest">About Us</span>
           </div>
 
           <h2
@@ -123,7 +123,7 @@ export default function About() {
                 transition={{ delay: 0.4 + i * 0.07 }}
                 className="flex items-center gap-3"
               >
-                <CheckCircle2 size={16} className="text-[#5C6795] flex-shrink-0" />
+                <CheckCircle2 size={16} className="text-[#6698D2] flex-shrink-0" />
                 <span className="text-sm text-gray-300">{p}</span>
               </motion.div>
             ))}

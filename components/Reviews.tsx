@@ -11,7 +11,7 @@ const reviews = [
     rating: 5,
     text: "I recently enrolled my child in a tuition class and I have been extremely pleased with the results. The teacher is highly knowledgeable and passionate about the subject, which has really helped my child grasp difficult concepts.",
     initial: "HN",
-    color: "#5C6795",
+    color: "#6698D2",
   },
   {
     name: "Samrat Kadam",
@@ -27,7 +27,7 @@ const reviews = [
     rating: 5,
     text: "Studying at AiS has been an enriching experience. The dedicated faculty, conducive learning environment, and comprehensive support system make it an exceptional place to pursue education. Highly recommended for anyone seeking quality learning and academic growth.",
     initial: "PM",
-    color: "#7B85B4",
+    color: "#89B0E0",
   },
   {
     name: "Priya Sharma",

@@ -11,7 +11,7 @@ const courses = [
     grades: "Std. VIII – XII",
     description:
       "From Mechanics to Modern Physics — master concepts with clarity through visual demonstrations and problem-solving workshops.",
-    color: "#5C6795",
+    color: "#6698D2",
     tag: "Most Popular",
   },
   {
@@ -29,7 +29,7 @@ const courses = [
     grades: "Std. VI – XII",
     description:
       "Build strong mathematical foundations. Covers Algebra, Geometry, Calculus, and board exam strategy.",
-    color: "#7B85B4",
+    color: "#89B0E0",
     tag: null,
   },
   {
@@ -80,7 +80,7 @@ export default function Courses() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-[#5C6795]/30 mb-5">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-[#6698D2]/30 mb-5">
             <div className="w-1.5 h-1.5 rounded-full bg-[#F0A500]" />
             <span className="text-xs text-[#F0A500] font-medium uppercase tracking-widest">Our Programs</span>
           </div>
