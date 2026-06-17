@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Star, ArrowRight, MapPin, Users, Award, Clock } from "lucide-react";
+import Galaxy from "./Galaxy";
 
 const stats = [
   { icon: Users, value: "500+", label: "Students Enrolled" },
@@ -21,29 +22,34 @@ export default function Hero() {
     <section
       id="hero"
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden grid-pattern"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Ambient light blobs */}
-      <motion.div
-        style={{ y, background: "radial-gradient(ellipse, #6698D2 0%, transparent 70%)" }}
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[600px] rounded-full opacity-20 blur-[120px]"
-      />
-      <motion.div
-        className="absolute bottom-20 right-10 w-[400px] h-[400px] rounded-full opacity-10 blur-[80px]"
+      {/* Galaxy WebGL background */}
+      <div className="absolute inset-0 z-0">
+        <Galaxy
+          mouseRepulsion={true}
+          mouseInteraction={true}
+          density={1.5}
+          glowIntensity={0.45}
+          saturation={0.85}
+          hueShift={210}
+          twinkleIntensity={0.4}
+          rotationSpeed={0.06}
+          repulsionStrength={1.8}
+          transparent={true}
+        />
+      </div>
+      {/* Dark overlay so text stays readable */}
+      <div className="absolute inset-0 z-0 bg-[#0A0B14]/60" />
+      {/* Subtle gold accent glow at bottom right */}
+      <div
+        className="absolute bottom-20 right-10 w-[400px] h-[400px] rounded-full opacity-10 blur-[80px] pointer-events-none z-0"
         style={{ background: "radial-gradient(ellipse, #F0A500 0%, transparent 70%)" }}
-        animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.15, 0.1] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute top-40 left-10 w-[300px] h-[300px] rounded-full opacity-10 blur-[80px]"
-        style={{ background: "radial-gradient(ellipse, #89B0E0 0%, transparent 70%)" }}
-        animate={{ scale: [1, 1.3, 1], opacity: [0.1, 0.18, 0.1] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
       />
 
       <motion.div
         style={{ opacity: heroOpacity }}
-        className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 text-center"
+        className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 text-center pointer-events-none [&_a]:pointer-events-auto [&_button]:pointer-events-auto"
       >
         {/* Badge */}
         <motion.div
@@ -147,7 +153,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
